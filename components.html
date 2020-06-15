@@ -1,72 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-	<title>Document</title>
-</head>
-
-<body>
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="#">ACME Anvils</a>
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" tabindex="-1">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="alert alert-success">
-			Danger!
-		</div>
-
-		<h1>Hello World</h1>
-		<p>
-			<span class="badge badge-warning">June</span>
-			<a href="http://www.google.com" class="btn btn-primary">Click me</a>
-		</p>
-
-        <div class="row">
-            <div class="card col-sm ml-1 m1-lg-3 mr-1 mr-lg-3">
-                <img src="hammer.jpg" class="card-img-top"/>
-                <div class="card-body">
-                    <div class="card-title">Hammer</div>
-                    <div class="card-text">Cost: $25.00</div>
-                </div>
-            </div>
-             <div class="card col-sm ml-1 m1-lg-3 mr-1 mr-lg-3">
-              <img src="hammer.jpg" class="card-img-top"/>
-                <div class="card-body">
-                    <div class="card-title">Hammer</div>
-                    <div class="card-text">Cost: $25.00</div>
-                </div>
-            </div>
-             <div class="card col-sm m1-1 ml-lg-3 mr-1 mr-lg-3">
-              <img src="hammer.jpg" class="card-img-top"/>
-                <div class="card-body">
-                    <div class="card-title">Hammer</div>
-                    <div class="card-text">Cost: $25.00</div>
-                </div>
-            </div>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">ACME Anvils</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Contact Us</a>
+            </li>
+          </ul>
         </div>
+      </nav>
 
-	</div>
+      <div class="jumbotron" id="hero">
+        <div id="hero-inner">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
 
-	<script src="jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-</body>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+        </ol>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/japanese-food-1.jpg" alt="Japanese Food 3"/>
+              <div class="carousel-caption d-none d-md-block">Japanese Food plate 1</div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/japanese-food-2.jpg" alt="Japanse Food 3" />
+              <div class="carousel-caption d-none d-md-block">Japanese Food Plate 2</div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/japanese-food-3.jpg" alt="Showing some Japanese food" />
+              <div class="carousel-caption d-none d-md-block">Japanese Food Plate 3</div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/japanese-food-4.jpg" alt="Japanese food 4" />
+              <div class="carousel-caption d-none d-md-block">Japanese Fodo Plate 4</div>?
+          </div>
+          <div class="carousel-item">
+            <p class="border border-primary rounded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus et fermentum consequat. Etiam malesuada lectus sit amet dui pretium ornare. Morbi vel posuere urna. 
+            Vivamus felis augue, gravida quis finibus vitae, aliquam sit amet ipsum. Nam est lacus, vulputate ac lacus nec, rutrum cursus tellus. Mauris ut euismod leo. Suspendisse dictum, leo a hendrerit consequat, magna dolor imperdiet felis, a gravida lectus nunc non eros. Aliquam sit amet mi lacinia, finibus ipsum sed, laoreet tortor. Nulla imperdiet elit rhoncus, accumsan dolor et, iaculis nulla. Duis ac sapien sit amet justo ornare accumsan a et nulla. Nulla facilisi. 
+            Vivamus non sem sed ipsum fringilla accumsan. Sed vel ultrices enim. Donec volutpat enim odio, nec sagittis urna rhoncus vel. Integer nisl nulla, maximus pretium porttitor at, luctus a sem. Pellentesque rhoncus maximus magna eget posuere.
+            </p>
+<p>
+Pellentesque luctus, elit non condimentum egestas, nibh mi laoreet nisi, et sagittis lacus nunc at risus. Suspendisse potenti. Donec ultrices tempor cursus. Nunc sit amet sapien feugiat dolor malesuada tempor. Aliquam nulla metus, sollicitudin ut elit ac, volutpat vehicula velit. Quisque sodales, felis nec tincidunt posuere, metus neque commodo elit, id tincidunt nisl ligula sit amet tellus. Vivamus imperdiet lectus ut nisl dictum, sed blandit nisl eleifend. Curabitur nec nunc dignissim, malesuada ante ac, condimentum justo.
+</p>
 
+<p>
+Quisque ac risus tempus, aliquam augue non, volutpat quam. Pellentesque sed turpis non eros tincidunt mattis vel finibus libero. Donec nec sodales tortor, eget sodales nibh. Pellentesque vehicula sem a nisi gravida consectetur. Vivamus dignissim a massa ac condimentum. Curabitur finibus leo sit amet sagittis elementum. Nullam vel suscipit leo. Vestibulum pretium consequat lacus non aliquet. Vestibulum feugiat ipsum ac mauris posuere, nec ultrices erat finibus. Cras id lacinia felis.
+</p>
+
+<p>
+Aenean sed sapien justo. Ut cursus metus ac mi varius, vitae elementum mauris lacinia. Ut felis sapien, commodo sit amet nibh eget, molestie posuere arcu. Nullam tristique leo sed arcu interdum porta. Aliquam vitae massa laoreet, pellentesque nisi et, sollicitudin metus. Aliquam nec enim ultricies, consectetur turpis eget, vulputate velit. Sed rhoncus libero at dui venenatis varius. Proin rutrum urna felis, vel varius justo cursus nec. Vivamus nunc libero, maximus at rhoncus tristique, convallis vel magna. Nulla blandit ante in leo varius posuere.
+</p>
+
+<p>
+Fusce condimentum quam sed diam tincidunt, in facilisis augue vehicula. Quisque nec tellus dapibus, maximus velit eget, venenatis justo. Morbi ex velit, tempor vitae justo quis, dignissim molestie tellus. Suspendisse potenti. Sed quis libero arcu. Aliquam lacinia mauris eget odio euismod, sed facilisis ante sodales. Aliquam quam turpis, bibendum nec sodales non, lobortis non diam. Quisque placerat dui tempus mi commodo laoreet. Vestibulum posuere luctus erat sed ornare. Morbi ut lectus a augue mattis porttitor. Sed ultricies nec justo non condimentum. Nullam ullamcorper, magna nec placerat fringilla, lacus libero consectetur purus, non fermentum risus erat et felis.
+</p>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"        
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+   
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="alert alert-success">
+        Danger!
+      </div>
+
+      <h1>Hello World</h1>
+      <p>
+        <span class="badge badge-warning">June</span>
+        <a href="http://www.google.com" class="btn btn-primary">Click me</a>
+      </p>
+
+      <div class="row">
+        <div class="card col-sm ml-1 m1-lg-3 mr-1 mr-lg-3">
+          <img src="hammer.jpg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title">Hammer</div>
+            <div class="card-text">Cost: $25.00</div>
+          </div>
+        </div>
+        <div class="card col-sm ml-1 m1-lg-3 mr-1 mr-lg-3">
+          <img src="hammer.jpg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title">Hammer</div>
+            <div class="card-text">Cost: $25.00</div>
+          </div>
+        </div>
+        <div class="card col-sm m1-1 ml-lg-3 mr-1 mr-lg-3">
+          <img src="hammer.jpg" class="card-img-top" />
+          <div class="card-body">
+            <div class="card-title">Hammer</div>
+            <div class="card-text">Cost: $25.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+       A
+    </div>
+
+    <div class="ml-md-5 p-5 border border-primary">
+      B
+    </div>
+    <div>
+        C
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+  </body>
 </html>

@@ -5,3 +5,19 @@
 .col {
     border:1px black solid;
 }
+
+div#hello {
+    color: orange;
+}
+
+div {
+    color: red;
+}
+
+#hello {
+    color: yellow;
+}
+
+div#hello {
+    color: black;
+}
